@@ -16,15 +16,18 @@ body {
   font-family: Arial, sans-serif;
   height: 100vh;
 
-  /* Background kambing (FIX bukan kucing lagi) */
-  background: url('https://images.unsplash.com/photo-1598514982526-5f2b2d7a1c1c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  /* Background kambing (lebih aman) */
+  background-image: url('https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Overlay gelap biar teks jelas */
+/* Overlay gelap */
 body::after {
   content: "";
   position: fixed;
@@ -35,21 +38,21 @@ body::after {
   left: 0;
 }
 
-/* Hiasan daun */
+/* Daun pojok */
 body::before {
   content: "";
   position: fixed;
   width: 100%;
   height: 100%;
   background:
-    url('https://png.pngtree.com/png-clipart/20230806/original/pngtree-leaves-decoration-corner-green-picture-image_9875930.png') top left no-repeat,
-    url('https://png.pngtree.com/png-clipart/20230806/original/pngtree-leaves-decoration-corner-green-picture-image_9875930.png') bottom right no-repeat;
-  background-size: 180px;
+    url('https://cdn-icons-png.flaticon.com/512/7662/7662033.png') top left no-repeat,
+    url('https://cdn-icons-png.flaticon.com/512/7662/7662033.png') bottom right no-repeat;
+  background-size: 120px;
   pointer-events: none;
   z-index: 1;
 }
 
-/* Box utama */
+/* Box */
 .container {
   position: relative;
   z-index: 2;
@@ -59,59 +62,30 @@ body::before {
   text-align: center;
   color: white;
   max-width: 500px;
-  backdrop-filter: blur(6px);
-  animation: fadeIn 1s ease;
 }
 
-/* Judul */
+/* Style */
 h1 {
   color: #00ff88;
-  margin-bottom: 10px;
 }
 
-/* Subtext */
-p {
-  margin-bottom: 20px;
-}
-
-/* List */
 ul {
   list-style: none;
+  margin-top: 15px;
 }
 
 ul li {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
-/* Button */
 button {
   margin-top: 20px;
   padding: 12px 25px;
-  font-size: 16px;
   background: green;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-/* Hover */
-button:hover {
-  background: darkgreen;
-  transform: scale(1.05);
-}
-
-/* Animasi masuk */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 </style>
 
