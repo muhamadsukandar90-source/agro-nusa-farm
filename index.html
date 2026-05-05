@@ -1,108 +1,127 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agro Nusa Farm</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klik Ternak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-/* Background gradasi hijau (AMAN TANPA GAMBAR) */
-body {
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  background: linear-gradient(to bottom, #2e7d32, #a5d6a7);
+    body {
+      background: #f5f7fa;
+    }
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: white;
+    }
 
-/* Box utama */
-.container {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  color: white;
-  max-width: 500px;
-  animation: fadeIn 1s ease;
-}
+    .logo {
+      font-weight: 600;
+      font-size: 20px;
+      color: #2c7da0;
+    }
 
-/* Judul */
-h1 {
-  color: #00ff88;
-  margin-bottom: 10px;
-}
+    .menu a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
 
-/* Paragraf */
-p {
-  margin-bottom: 15px;
-}
+    .menu a.active {
+      background: #2c7da0;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
 
-/* List */
-ul {
-  list-style: none;
-}
+    /* Hero */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 50px;
+    }
 
-ul li {
-  margin: 8px 0;
-}
+    .hero-text {
+      max-width: 500px;
+    }
 
-/* Button */
-button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  font-size: 16px;
-  background: green;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    .hero-text h1 {
+      font-size: 32px;
+      color: #2c7da0;
+      margin-bottom: 20px;
+    }
 
-button:hover {
-  background: darkgreen;
-  transform: scale(1.05);
-}
+    .hero-text p {
+      color: #666;
+      margin-bottom: 30px;
+    }
 
-/* Animasi */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
+    .btn {
+      background: #2c7da0;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+    }
 
+    .hero img {
+      width: 450px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        width: 300px;
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
-  <h1>Agro Nusa Farm</h1>
-  <p>Peternakan Domba Berkualitas, Sehat & Amanah</p>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Klik Ternak</div>
+    <div class="menu">
+      <a href="#" class="active">Beranda</a>
+      <a href="#">Narasi</a>
+      <a href="#">Produk</a>
+      <a href="#">Tentang</a>
+    </div>
+  </div>
 
-  <ul>
-    <li>✔️ Domba sehat & siap qurban</li>
-    <li>✔️ Harga bersaing</li>
-    <li>✔️ Bisa kirim ke lokasi</li>
-  </ul>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Yuk, Dukung Edukasi Peternakan Indonesia!</h1>
+      <p>
+        Klikternak hadir sebagai sumber informasi dan edukasi
+        seputar peternakan. Mari bersama kita majukan peternakan Indonesia!
+      </p>
+      <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+    </div>
 
-  <a href="https://wa.me/6285175085344">
-    <button>Hubungi WhatsApp</button>
-  </a>
-</div>
+    <img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png" alt="Peternakan">
+  </section>
 
 </body>
 </html>
