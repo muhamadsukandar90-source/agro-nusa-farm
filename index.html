@@ -6,133 +6,55 @@
 <title>Agro Nusa Farm</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  height: 100vh;
-
-  /* BACKGROUND KAMBING (LINK STABIL) */
-  background-image: url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1400&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Overlay gelap */
 body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  top:0;
+  left:0;
 }
 
-/* Daun pojok */
-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background:
-    url('https://cdn-icons-png.flaticon.com/512/7662/7662033.png') top left no-repeat,
-    url('https://cdn-icons-png.flaticon.com/512/7662/7662033.png') bottom right no-repeat;
-  background-size: 130px;
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* Box utama */
 .container {
-  position: relative;
-  z-index: 2;
-  background: rgba(0,0,0,0.6);
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  color: white;
-  max-width: 500px;
-  backdrop-filter: blur(5px);
-  animation: fadeIn 1s ease;
-}
-
-/* Judul */
-h1 {
-  color: #00ff88;
-  margin-bottom: 10px;
-}
-
-/* Text */
-p {
-  margin-bottom: 15px;
-}
-
-/* List */
-ul {
-  list-style: none;
-}
-
-ul li {
-  margin: 8px 0;
-}
-
-/* Button */
-button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  font-size: 16px;
-  background: green;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: darkgreen;
-  transform: scale(1.05);
-}
-
-/* Animasi */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  position:relative;
+  z-index:2;
+  background:rgba(0,0,0,0.6);
+  padding:40px;
+  border-radius:15px;
+  color:white;
+  text-align:center;
 }
 </style>
-
 </head>
 
-<body>
+<body style="
+  margin:0;
+  font-family:Arial;
+  height:100vh;
+
+  background-image:url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Goat_closeup.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+">
 
 <div class="container">
-  <h1>Agro Nusa Farm</h1>
+  <h1 style="color:#00ff88;">Agro Nusa Farm</h1>
   <p>Peternakan Domba Berkualitas, Sehat & Amanah</p>
 
-  <ul>
-    <li>✔️ Domba sehat & siap qurban</li>
-    <li>✔️ Harga bersaing</li>
-    <li>✔️ Bisa kirim ke lokasi</li>
-  </ul>
+  <p>✔️ Domba sehat & siap qurban</p>
+  <p>✔️ Harga bersaing</p>
+  <p>✔️ Bisa kirim ke lokasi</p>
 
   <a href="https://wa.me/6285175865344">
-    <button>Hubungi WhatsApp</button>
+    <button style="padding:10px 20px; background:green; color:white; border:none; border-radius:8px;">
+      Hubungi WhatsApp
+    </button>
   </a>
 </div>
 
