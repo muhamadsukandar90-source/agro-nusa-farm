@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klik Ternak</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Agro Nusa Farm</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -15,7 +17,7 @@
     }
 
     body {
-      background: #f5f7fa;
+      background: #f4f7f9;
     }
 
     /* Navbar */
@@ -23,26 +25,28 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 50px;
+      padding: 20px 60px;
       background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     .logo {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 20px;
-      color: #2c7da0;
+      color: #2c7a7b;
     }
 
     .menu a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: #444;
+      font-weight: 500;
     }
 
     .menu a.active {
-      background: #2c7da0;
+      background: #2c7a7b;
       color: white;
-      padding: 8px 15px;
+      padding: 8px 18px;
       border-radius: 20px;
     }
 
@@ -51,35 +55,107 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 80px 50px;
+      padding: 80px 60px;
     }
 
     .hero-text {
-      max-width: 500px;
+      max-width: 520px;
     }
 
     .hero-text h1 {
-      font-size: 32px;
-      color: #2c7da0;
+      font-size: 36px;
+      color: #2c7a7b;
       margin-bottom: 20px;
     }
 
     .hero-text p {
       color: #666;
       margin-bottom: 30px;
+      line-height: 1.6;
     }
 
     .btn {
-      background: #2c7da0;
+      background: #2c7a7b;
       color: white;
-      padding: 12px 25px;
-      border-radius: 25px;
+      padding: 14px 28px;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: 500;
       display: inline-block;
     }
 
+    .btn:hover {
+      background: #225e60;
+    }
+
     .hero img {
-      width: 450px;
+      width: 420px;
+    }
+
+    /* Produk */
+    .produk {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .produk h2 {
+      margin-bottom: 40px;
+      color: #2c7a7b;
+    }
+
+    .produk-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #2c7a7b;
+      color: white;
+      padding: 60px;
+      text-align: center;
+    }
+
+    .cta a {
+      margin-top: 20px;
+      display: inline-block;
+      background: white;
+      color: #2c7a7b;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      color: #777;
     }
 
     /* Responsive */
@@ -90,38 +166,76 @@
       }
 
       .hero img {
-        width: 300px;
+        width: 280px;
         margin-top: 30px;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <div class="logo">Klik Ternak</div>
-    <div class="menu">
-      <a href="#" class="active">Beranda</a>
-      <a href="#">Narasi</a>
-      <a href="#">Produk</a>
-      <a href="#">Tentang</a>
-    </div>
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">Agro Nusa Farm</div>
+  <div class="menu">
+    <a href="#" class="active">Beranda</a>
+    <a href="#">Produk</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Domba Berkualitas untuk Qurban & Aqiqah</h1>
+    <p>
+      Agro Nusa Farm menyediakan domba sehat, terawat, dan sesuai syariat.
+      Cocok untuk kebutuhan qurban, aqiqah, maupun peternakan.
+    </p>
+    <a href="https://wa.me/6285886566520" class="btn">Pesan Sekarang (WhatsApp)</a>
   </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Yuk, Dukung Edukasi Peternakan Indonesia!</h1>
-      <p>
-        Klikternak hadir sebagai sumber informasi dan edukasi
-        seputar peternakan. Mari bersama kita majukan peternakan Indonesia!
-      </p>
-      <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+</section>
+
+<!-- Produk -->
+<section class="produk">
+  <h2>Paket Domba Unggulan</h2>
+
+  <div class="produk-list">
+    <div class="card">
+      <img src="https://i.imgur.com/7yUvePI.jpg">
+      <h3>Domba Qurban</h3>
+      <p>Berat 25 - 35 kg, sehat & siap qurban</p>
     </div>
 
-    <img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png" alt="Peternakan">
-  </section>
+    <div class="card">
+      <img src="https://i.imgur.com/3ZQ3Z6K.jpg">
+      <h3>Domba Aqiqah</h3>
+      <p>Sudah sesuai syariat & berkualitas</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/Fk7bF3x.jpg">
+      <h3>Domba Ternak</h3>
+      <p>Cocok untuk budidaya & investasi</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Siap Berqurban atau Aqiqah?</h2>
+  <p>Hubungi kami sekarang dan dapatkan domba terbaik dari Agro Nusa Farm</p>
+  <a href="https://wa.me/6285886566520">Chat Sekarang</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2026 Agro Nusa Farm - Peternakan Domba Amanah & Terpercaya
+</footer>
 
 </body>
 </html>
