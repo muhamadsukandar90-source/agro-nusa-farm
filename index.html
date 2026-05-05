@@ -1,92 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Agro Nusa Farm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Nusa Farm</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      padding: 50px;
-      margin: 0;
-      color: white;
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      /* Background kambing FIX */
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Goat_closeup.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
 
-    /* Efek daun sudut */
-    .daun::before, .daun::after {
-      content: "";
-      position: fixed;
-      width: 200px;
-      height: 200px;
-      background-image: url('https://pngimg.com/uploads/leaf/leaf_PNG36850.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.5;
-      z-index: 0;
-    }
+  /* Background kambing (FIX bukan kucing lagi) */
+  background: url('https://images.unsplash.com/photo-1598514982526-5f2b2d7a1c1c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
 
-    .daun::before {
-      top: 0;
-      left: 0;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .daun::after {
-      bottom: 0;
-      right: 0;
-      transform: rotate(180deg);
-    }
+/* Overlay gelap biar teks jelas */
+body::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+}
 
-    /* Box konten */
-    .container {
-      background-color: rgba(0, 0, 0, 0.55);
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 600px;
-      margin: auto;
-      position: relative;
-      z-index: 1;
-    }
+/* Hiasan daun */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:
+    url('https://png.pngtree.com/png-clipart/20230806/original/pngtree-leaves-decoration-corner-green-picture-image_9875930.png') top left no-repeat,
+    url('https://png.pngtree.com/png-clipart/20230806/original/pngtree-leaves-decoration-corner-green-picture-image_9875930.png') bottom right no-repeat;
+  background-size: 180px;
+  pointer-events: none;
+  z-index: 1;
+}
 
-    .btn {
-      padding: 12px 25px;
-      font-size: 16px;
-      background-color: green;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
+/* Box utama */
+.container {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 1s ease;
+}
 
-    .btn:hover {
-      background-color: #0a8a0a;
-    }
-  </style>
+/* Judul */
+h1 {
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+/* Subtext */
+p {
+  margin-bottom: 20px;
+}
+
+/* List */
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+  background: darkgreen;
+  transform: scale(1.05);
+}
+
+/* Animasi masuk */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
 </head>
 
-<body class="daun">
+<body>
 
-  <div class="container">
-    <h1 style="color:#00ff88;">Agro Nusa Farm</h1>
+<div class="container">
+  <h1>Agro Nusa Farm</h1>
+  <p>Peternakan Domba Berkualitas, Sehat & Amanah</p>
 
-    <p style="font-size: 18px;">
-      Peternakan Domba Berkualitas, Sehat & Amanah
-    </p>
+  <ul>
+    <li>✔️ Domba sehat & siap qurban</li>
+    <li>✔️ Harga bersaing</li>
+    <li>✔️ Bisa kirim ke lokasi</li>
+  </ul>
 
-    <p>✔️ Domba sehat & siap qurban</p>
-    <p>✔️ Harga bersaing</p>
-    <p>✔️ Bisa kirim ke lokasi</p>
-
-    <a href="https://wa.me/6285175865344">
-      <button class="btn">Hubungi WhatsApp</button>
-    </a>
-  </div>
+  <a href="https://wa.me/6285175865344">
+    <button>Hubungi WhatsApp</button>
+  </a>
+</div>
 
 </body>
 </html>
