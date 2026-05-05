@@ -1,32 +1,57 @@
-<body style="
-  font-family: Arial;
-  text-align: center;
-  padding: 50px;
-  background-image: url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agro Nusa Farm</title>
 
-<div style="
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 10px;
-">
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 50px;
+      background-image: url('https://images.unsplash.com/photo-1560114928-40f1f1eb26a0');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      margin: 0;
+    }
 
-  <h1 style="color: #00ff88;">Agro Nusa Farm</h1>
+    /* Efek daun di sudut */
+    .daun::before, .daun::after {
+      content: "";
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background-image: url('https://pngimg.com/uploads/leaf/leaf_PNG36850.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      z-index: 0;
+    }
 
-  <p style="font-size: 18px;">
-    Peternakan Domba Berkualitas, Sehat & Amanah
-  </p>
+    .daun::before {
+      top: 0;
+      left: 0;
+    }
 
-  <p>✔️ Domba sehat & siap qurban</p>
-  <p>✔️ Harga bersaing</p>
-  <p>✔️ Bisa kirim ke lokasi</p>
+    .daun::after {
+      bottom: 0;
+      right: 0;
+      transform: rotate(180deg);
+    }
 
-  <a href="https://wa.me/6285175865344">
-    <button style="
+    /* Box konten */
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 15px;
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
       padding: 12px 25px;
       font-size: 16px;
       background-color: green;
@@ -34,10 +59,34 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin-top: 20px;">
-      Hubungi WhatsApp
-    </button>
-  </a>
+      margin-top: 20px;
+    }
 
-</div>
+    .btn:hover {
+      background-color: #0a8a0a;
+    }
+  </style>
+</head>
+
+<body class="daun">
+
+  <div class="container">
+
+    <h1 style="color:#00ff88;">Agro Nusa Farm</h1>
+
+    <p style="font-size: 18px;">
+      Peternakan Domba Berkualitas, Sehat & Amanah
+    </p>
+
+    <p>✔️ Domba sehat & siap qurban</p>
+    <p>✔️ Harga bersaing</p>
+    <p>✔️ Bisa kirim ke lokasi</p>
+
+    <a href="https://wa.me/6285175865344">
+      <button class="btn">Hubungi WhatsApp</button>
+    </a>
+
+  </div>
+
 </body>
+</html>
