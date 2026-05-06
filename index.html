@@ -15,18 +15,33 @@ gtag('config', 'G-SYNVSE8456');
 </script>
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f5f5;}
+body {
+    margin:0;
+    font-family:Arial;
+    background:#f5f5f5;
+}
 
+/* HEADER */
 header {
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:15px 30px;
     background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
-.logo {display:flex;align-items:center;gap:10px;}
-.logo img {width:45px;height:45px;border-radius:50%;}
+.logo {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img {
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
 
 .btn-header {
     background:#2ecc71;
@@ -36,35 +51,53 @@ header {
     text-decoration:none;
 }
 
+/* HERO */
 .hero {
     background:linear-gradient(90deg,#2c7a7b,#38a169);
     color:white;
     padding:80px 30px;
 }
 
+.hero h1 {
+    font-size:36px;
+}
+
 .btn {
     background:#2ecc71;
-    padding:12px 20px;
+    padding:10px 18px;
     border-radius:20px;
     color:white;
     text-decoration:none;
+    display:inline-block;
+    margin-top:10px;
 }
 
-.section {padding:50px 20px;text-align:center;}
+/* SECTION */
+.section {
+    padding:50px 20px;
+    text-align:center;
+}
 
+/* GRID */
 .grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
     gap:20px;
     max-width:1100px;
     margin:auto;
 }
 
+/* CARD */
 .card {
     background:white;
     padding:15px;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
 }
 
 .card img {
@@ -74,8 +107,12 @@ header {
     border-radius:10px;
 }
 
-.price {color:green;font-weight:bold;}
+.price {
+    color:green;
+    font-weight:bold;
+}
 
+/* TESTIMONI */
 .testimoni img {
     width:100%;
     height:160px;
@@ -83,6 +120,7 @@ header {
     border-radius:10px;
 }
 
+/* FOOTER */
 footer {
     text-align:center;
     padding:25px;
@@ -90,35 +128,48 @@ footer {
     color:#ccc;
 }
 
-footer h3 {color:white;}
+footer h3 {
+    color:white;
+}
 
+/* WA FLOAT */
 .wa {
     position:fixed;
     bottom:20px;
     right:20px;
-    width:55px;
+    width:60px;
+    z-index:999;
+    transition:0.3s;
+}
+
+.wa:hover {
+    transform:scale(1.1);
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
     <div class="logo">
-        <img src="images/logo.jpg">
+        <img src="images/logo.jpg" alt="logo">
         <h3>Agro Nusa Farm</h3>
     </div>
-    <a href="https://wa.me/6285175085344" class="btn-header">Hubungi</a>
+    <a href="https://wa.me/6285175085344" target="_blank" class="btn-header">Hubungi</a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
     <h1>Domba Qurban Berkualitas & Amanah</h1>
-    <p>Sehat, sesuai syariat, siap kirim</p>
-    <a href="https://wa.me/6285175085344" class="btn">Pesan Sekarang</a>
+    <p>Sehat, sesuai syariat, siap kirim langsung ke rumah Anda</p>
+    <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20domba" target="_blank" class="btn">Pesan Sekarang</a>
 </section>
 
+<!-- KATALOG -->
 <section class="section">
 <h2>Katalog Domba</h2>
+
 <div class="grid">
 
 <div class="card">
@@ -173,8 +224,10 @@ footer h3 {color:white;}
 </div>
 </section>
 
+<!-- TESTIMONI -->
 <section class="section">
 <h2>Testimoni</h2>
+
 <div class="grid testimoni">
 
 <div class="card">
@@ -200,6 +253,7 @@ footer h3 {color:white;}
 </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
 <h3>Agro Nusa Farm</h3>
 <p>Peternakan Domba Qurban & Aqiqah Amanah</p>
@@ -211,8 +265,9 @@ footer h3 {color:white;}
 document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
-<a href="https://wa.me/6285175085344">
-<img src="images/wa.jpg" class="wa">
+<!-- WA FLOAT FIX -->
+<a href="https://wa.me/6285175085344?text=Halo%20saya%20tertarik%20dengan%20domba%20Agro%20Nusa%20Farm" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="wa">
 </a>
 
 </body>
