@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agro Nusa Farm</title>
 
+<!-- SEO -->
+<meta name="description" content="Jual domba qurban & aqiqah terpercaya. Sehat, sesuai syariat, siap kirim. Agro Nusa Farm.">
+
 <!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYNVSE8456"></script>
 <script>
@@ -15,110 +18,86 @@ gtag('config', 'G-SYNVSE8456');
 </script>
 
 <style>
-body {
-    margin:0;
-    font-family:Arial;
-    background:#f5f5f5;
-}
+body {margin:0;font-family:Arial;background:#f5f5f5}
 
 /* HEADER */
 header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 30px;
-    background:white;
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
-
-.logo {
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo img {
-    width:45px;
-    height:45px;
-    border-radius:50%;
-}
+.logo {display:flex;align-items:center;gap:10px}
+.logo img {width:45px;height:45px;border-radius:50%}
 
 /* BUTTON */
 .btn, .btn-header {
-    background:#2ecc71;
-    color:white;
-    padding:10px 18px;
-    border-radius:20px;
-    text-decoration:none;
-    display:inline-block;
+background:#2ecc71;color:white;
+padding:10px 18px;border-radius:20px;
+text-decoration:none;display:inline-block;
 }
 
 /* HERO */
 .hero {
-    background:linear-gradient(90deg,#2c7a7b,#38a169);
-    color:white;
-    padding:80px 30px;
+background:linear-gradient(90deg,#2c7a7b,#38a169);
+color:white;padding:80px 30px;
 }
+.hero h1 {font-size:34px}
 
 /* SECTION */
-.section {
-    padding:50px 20px;
-    text-align:center;
-}
+.section {padding:50px 20px;text-align:center}
 
 /* GRID */
 .grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
-    max-width:1100px;
-    margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;max-width:1100px;margin:auto;
 }
 
 /* CARD */
 .card {
-    background:white;
-    padding:15px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+background:white;padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
+.card:hover {transform:translateY(-5px)}
 
 .card img {
-    width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius:10px;
+width:100%;height:220px;
+object-fit:cover;
+border-radius:12px;
 }
 
-/* PRICE */
-.price {
-    color:green;
-    font-weight:bold;
-}
+.price {color:green;font-weight:bold}
 
 /* TESTIMONI */
-.testimoni img {
-    height:160px;
+.testimoni img {height:160px}
+
+/* MAP */
+.map-box {
+max-width:1100px;margin:auto;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
 footer {
-    text-align:center;
-    padding:25px;
-    background:#1a202c;
-    color:#ccc;
+text-align:center;padding:25px;
+background:#1a202c;color:#ccc;
 }
-
-footer h3 {
-    color:white;
-}
+footer h3 {color:white}
 
 /* WA FLOAT */
 .wa {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:60px;
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+z-index:999;
+transition:0.3s;
 }
+.wa:hover {transform:scale(1.1)}
 </style>
 </head>
 
@@ -126,18 +105,25 @@ footer h3 {
 
 <!-- HEADER -->
 <header>
-    <div class="logo">
-        <img src="images/logo.jpg" alt="logo">
-        <h3>Agro Nusa Farm</h3>
-    </div>
-    <a href="https://wa.me/6285175085344" class="btn-header">Hubungi</a>
+<div class="logo">
+<img src="images/logo.jpg">
+<h3>Agro Nusa Farm</h3>
+</div>
+<a href="https://wa.me/6285175085344" class="btn-header">Hubungi</a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Domba Qurban Berkualitas & Amanah</h1>
-    <p>Sehat, sesuai syariat, siap kirim</p>
-    <a href="https://wa.me/6285175085344" class="btn">Pesan Sekarang</a>
+<h1>Domba Qurban Berkualitas & Amanah</h1>
+<p>Sehat, sesuai syariat, siap kirim 🚚 | Stok terbatas!</p>
+<a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20domba" class="btn">Cek Ketersediaan</a>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+<p>✔ 100+ pelanggan puas<br>
+✔ Domba sehat & terawat<br>
+✔ Bisa kirim ke lokasi</p>
 </section>
 
 <!-- KATALOG -->
@@ -146,7 +132,6 @@ footer h3 {
 
 <div class="grid">
 
-<!-- A (pakai foto premium) -->
 <div class="card">
 <img src="images/domba7.jpg">
 <h3>Domba A</h3>
@@ -155,7 +140,6 @@ footer h3 {
 <a href="https://wa.me/6285175085344?text=Pesan%20Domba%20A" class="btn">Pesan</a>
 </div>
 
-<!-- B -->
 <div class="card">
 <img src="images/domba1.jpg">
 <h3>Domba B</h3>
@@ -164,7 +148,6 @@ footer h3 {
 <a href="https://wa.me/6285175085344?text=Pesan%20Domba%20B" class="btn">Pesan</a>
 </div>
 
-<!-- C -->
 <div class="card">
 <img src="images/domba2.jpg">
 <h3>Domba C</h3>
@@ -173,7 +156,6 @@ footer h3 {
 <a href="https://wa.me/6285175085344?text=Pesan%20Domba%20C" class="btn">Pesan</a>
 </div>
 
-<!-- D -->
 <div class="card">
 <img src="images/domba3.jpg">
 <h3>Domba D</h3>
@@ -182,7 +164,6 @@ footer h3 {
 <a href="https://wa.me/6285175085344?text=Pesan%20Domba%20D" class="btn">Pesan</a>
 </div>
 
-<!-- E -->
 <div class="card">
 <img src="images/domba4.jpg">
 <h3>Domba E</h3>
@@ -191,22 +172,20 @@ footer h3 {
 <a href="https://wa.me/6285175085344?text=Pesan%20Domba%20E" class="btn">Pesan</a>
 </div>
 
-<!-- SUPER -->
 <div class="card">
 <img src="images/domba5.jpg">
 <h3>Super</h3>
 <p class="price">Rp 5.000.000</p>
 <p>50 kg+</p>
-<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20Super" class="btn">Pesan</a>
+<a href="https://wa.me/6285175085344?text=Pesan%20Super" class="btn">Pesan</a>
 </div>
 
-<!-- PREMIUM -->
 <div class="card">
 <img src="images/domba6.jpg">
 <h3>Premium</h3>
 <p class="price">Rp 5.500.000</p>
 <p>55 kg+</p>
-<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20Premium" class="btn">Pesan</a>
+<a href="https://wa.me/6285175085344?text=Pesan%20Premium" class="btn">Pesan</a>
 </div>
 
 </div>
@@ -241,6 +220,23 @@ footer h3 {
 </div>
 </section>
 
+<!-- MAP -->
+<section class="section">
+<h2>Lokasi Kami</h2>
+
+<div class="map-box">
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7926.132499615324!2d106.74568595451088!3d-6.638695276978069!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cf6a86f5c39d%3A0xa35bd2ba0ed102b!2sAgro%20Nusa%20Farm!5e0!3m2!1sid!2sid!4v1778053124341!5m2!1sid!2sid"
+width="100%" height="350" style="border:0;" loading="lazy">
+</iframe>
+</div>
+
+<a href="https://maps.app.goo.gl/4nntmgSG3zitUtk86" target="_blank" class="btn" style="margin-top:15px;">
+Buka di Google Maps
+</a>
+
+</section>
+
 <!-- FOOTER -->
 <footer>
 <h3>Agro Nusa Farm</h3>
@@ -254,7 +250,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 <!-- WA FLOAT -->
-<a href="https://wa.me/6285175085344">
+<a href="https://wa.me/6285175085344?text=Halo%20saya%20tertarik%20dengan%20domba%20Agro%20Nusa%20Farm">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="wa">
 </a>
 
