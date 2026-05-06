@@ -18,21 +18,18 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  gap: 10px;
   padding: 15px 40px;
   background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+
+.logo-img {
+  width: 50px;
+}
+
+.logo-text {
   font-weight: 700;
   color: #2c7a7b;
-}
-.logo img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
 }
 
 /* Hero */
@@ -42,18 +39,18 @@ body {
   justify-content: space-between;
   padding: 60px;
 }
+
 .hero img {
-  width: 420px;
+  width: 400px;
   border-radius: 20px;
 }
+
 .btn {
-  display: inline-block;
   background: #2c7a7b;
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
   text-decoration: none;
-  margin-top: 15px;
 }
 
 /* Section */
@@ -69,20 +66,23 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card {
   background: white;
   padding: 15px;
   border-radius: 15px;
   width: 250px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 .card img {
   width: 100%;
   border-radius: 10px;
 }
+
 .price {
   color: #2c7a7b;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* WA Floating */
@@ -91,10 +91,13 @@ body {
   bottom: 20px;
   right: 20px;
   background: #25D366;
-  color: white;
-  padding: 15px;
+  padding: 12px;
   border-radius: 50%;
-  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.wa img {
+  width: 30px;
 }
 
 /* Responsive */
@@ -104,8 +107,8 @@ body {
     text-align:center;
   }
   .hero img {
-    margin-top: 20px;
-    width: 300px;
+    margin-top:20px;
+    width:300px;
   }
 }
 </style>
@@ -116,10 +119,8 @@ body {
 
 <!-- Navbar -->
 <div class="navbar">
-  <div class="logo">
-    <img src="/images/logo.jpg" alt="logo">
-    Agro Nusa Farm
-  </div>
+  <img src="/images/logo.jpg" class="logo-img">
+  <div class="logo-text">Agro Nusa Farm</div>
 </div>
 
 <!-- Hero -->
@@ -141,58 +142,51 @@ body {
 
     <div class="card">
       <img src="/images/domba1.jpg">
-      <h3>Grade A</h3>
+      <h3>Domba A</h3>
       <p class="price">Rp 2.500.000</p>
-      <p>Bobot ± 25-26 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+      <p>Bobot ± 25–26 kg</p>
     </div>
 
     <div class="card">
       <img src="/images/domba2.jpg">
-      <h3>Grade B</h3>
+      <h3>Domba B</h3>
       <p class="price">Rp 3.000.000</p>
-      <p>Bobot ± 30-31 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+      <p>Bobot ± 30–31 kg</p>
     </div>
 
     <div class="card">
       <img src="/images/domba3.jpg">
-      <h3>Grade C</h3>
+      <h3>Domba C</h3>
       <p class="price">Rp 3.500.000</p>
-      <p>Bobot ± 35-36 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+      <p>Bobot ± 35–36 kg</p>
     </div>
 
     <div class="card">
       <img src="/images/domba4.jpg">
-      <h3>Grade D</h3>
+      <h3>Domba D</h3>
       <p class="price">Rp 4.000.000</p>
-      <p>Bobot ± 40-41 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+      <p>Bobot ± 40–41 kg</p>
     </div>
 
     <div class="card">
       <img src="/images/domba5.jpg">
-      <h3>Grade E</h3>
+      <h3>Domba E</h3>
       <p class="price">Rp 4.500.000</p>
-      <p>Bobot ± 45-46 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+      <p>Bobot ± 45–46 kg</p>
     </div>
 
     <div class="card">
       <img src="/images/domba6.jpg">
-      <h3>Super</h3>
+      <h3>Domba Super</h3>
       <p class="price">Rp 5.000.000</p>
       <p>Bobot ± 50 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
     </div>
 
     <div class="card">
       <img src="/images/domba7.jpg">
-      <h3>Premium</h3>
+      <h3>Domba Premium</h3>
       <p class="price">Rp 5.500.000</p>
       <p>Bobot ± 55 kg</p>
-      <a href="https://wa.me/6285175085344" class="btn">Pesan</a>
     </div>
 
   </div>
@@ -200,7 +194,7 @@ body {
 
 <!-- Testimoni -->
 <section class="section">
-  <h2>Testimoni</h2>
+  <h2>Testimoni Pelanggan</h2>
 
   <div class="cards">
     <div class="card"><img src="/images/testi1.jpg"></div>
@@ -212,12 +206,14 @@ body {
 
 <!-- CTA -->
 <section class="section" style="background:#2c7a7b; color:white;">
-  <h2>Siap Qurban?</h2>
+  <h2>Siap Qurban Sekarang?</h2>
   <a href="https://wa.me/6285175085344" class="btn">Chat WhatsApp</a>
 </section>
 
 <!-- WA Floating -->
-<a href="https://wa.me/6285175085344" class="wa">WA</a>
+<a href="https://wa.me/6285175085344" class="wa" target="_blank">
+  <img src="/images/wa.png">
+</a>
 
 </body>
 </html>
