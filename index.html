@@ -36,6 +36,7 @@ header h2 {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -46,16 +47,14 @@ header h2 {
     font-size: 32px;
 }
 
-.hero p {
-    margin: 15px 0;
-}
-
 .btn {
     background: #2c7a7b;
     color: white;
     padding: 12px 20px;
     border-radius: 20px;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .hero img {
@@ -105,6 +104,37 @@ header h2 {
     text-decoration: none;
 }
 
+/* TESTIMONI */
+.testimoni {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+.testi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testi-card {
+    width: 220px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.testi-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testi-card p {
+    font-size: 14px;
+}
+
 /* FLOAT WA */
 .wa-float {
     position: fixed;
@@ -132,93 +162,105 @@ header h2 {
         <h1>Domba Qurban & Aqiqah Sesuai Syariat</h1>
         <p>Kualitas terbaik langsung dari peternak terpercaya.</p>
 
-        <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20domba%20di%20Agro%20Nusa%20Farm" target="_blank" class="btn">
-            Pesan Sekarang
+        <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20domba%20di%20Agro%20Nusa%20Farm"
+           target="_blank" class="btn">
+           Pesan Sekarang
         </a>
     </div>
 
-    <img src="images/domba1.jpg" alt="domba">
+    <img src="images/domba1.jpg">
 </section>
 
 <!-- KATALOG -->
 <section class="katalog">
-    <h2>Katalog Domba</h2>
+<h2>Katalog Domba</h2>
 
-    <div class="cards">
+<div class="cards">
 
-        <!-- A -->
-        <div class="card">
-            <img src="images/domba1.jpg">
-            <h3>Domba A</h3>
-            <p class="price">Rp 2.500.000</p>
-            <p>Bobot 25-30kg</p>
-            <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20Domba%20A" target="_blank" class="btn-wa">
-                Pesan via WA
-            </a>
-        </div>
+<div class="card">
+<img src="images/domba1.jpg">
+<h3>Domba A</h3>
+<p class="price">Rp 2.500.000</p>
+<p>Bobot 25-30kg</p>
+<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20A" target="_blank" class="btn-wa">Pesan WA</a>
+</div>
 
-        <!-- B -->
-        <div class="card">
-            <img src="images/domba2.jpg">
-            <h3>Domba B</h3>
-            <p class="price">Rp 3.000.000</p>
-            <p>Bobot 30-35kg</p>
-            <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20Domba%20B" target="_blank" class="btn-wa">
-                Pesan via WA
-            </a>
-        </div>
+<div class="card">
+<img src="images/domba2.jpg">
+<h3>Domba B</h3>
+<p class="price">Rp 3.000.000</p>
+<p>Bobot 30-35kg</p>
+<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20B" target="_blank" class="btn-wa">Pesan WA</a>
+</div>
 
-        <!-- C -->
-        <div class="card">
-            <img src="images/domba3.jpg">
-            <h3>Domba C</h3>
-            <p class="price">Rp 3.500.000</p>
-            <p>Bobot 35-40kg</p>
-            <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20Domba%20C" target="_blank" class="btn-wa">
-                Pesan via WA
-            </a>
-        </div>
+<div class="card">
+<img src="images/domba3.jpg">
+<h3>Domba C</h3>
+<p class="price">Rp 3.500.000</p>
+<p>Bobot 35-40kg</p>
+<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20C" target="_blank" class="btn-wa">Pesan WA</a>
+</div>
 
-        <!-- D -->
-        <div class="card">
-            <img src="images/domba4.jpg">
-            <h3>Domba D</h3>
-            <p class="price">Rp 4.000.000</p>
-            <p>Bobot 40-45kg</p>
-            <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20Domba%20D" target="_blank" class="btn-wa">
-                Pesan via WA
-            </a>
-        </div>
+<div class="card">
+<img src="images/domba4.jpg">
+<h3>Domba D</h3>
+<p class="price">Rp 4.000.000</p>
+<p>Bobot 40-45kg</p>
+<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20D" target="_blank" class="btn-wa">Pesan WA</a>
+</div>
 
-        <!-- SUPER -->
-        <div class="card">
-            <img src="images/domba5.jpg">
-            <h3>Domba Super</h3>
-            <p class="price">Rp 4.500.000</p>
-            <p>Bobot 45-50kg</p>
-            <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20Domba%20Super" target="_blank" class="btn-wa">
-                Pesan via WA
-            </a>
-        </div>
+<div class="card">
+<img src="images/domba5.jpg">
+<h3>Domba Super</h3>
+<p class="price">Rp 4.500.000</p>
+<p>Bobot 45-50kg</p>
+<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20Super" target="_blank" class="btn-wa">Pesan WA</a>
+</div>
 
-        <!-- PREMIUM -->
-        <div class="card">
-            <img src="images/domba6.jpg">
-            <h3>Domba Premium</h3>
-            <p class="price">Rp 5.000.000</p>
-            <p>Bobot 50kg+</p>
-            <a href="https://wa.me/6285175085344?text=Halo%20saya%20ingin%20pesan%20Domba%20Premium" target="_blank" class="btn-wa">
-                Pesan via WA
-            </a>
-        </div>
+<div class="card">
+<img src="images/domba6.jpg">
+<h3>Domba Premium</h3>
+<p class="price">Rp 5.000.000</p>
+<p>Bobot 50kg+</p>
+<a href="https://wa.me/6285175085344?text=Pesan%20Domba%20Premium" target="_blank" class="btn-wa">Pesan WA</a>
+</div>
 
-    </div>
+</div>
 </section>
 
-<!-- FLOATING WA -->
-<a href="https://wa.me/6285175085344?text=Halo%20saya%20tertarik%20dengan%20domba%20di%20Agro%20Nusa%20Farm" 
+<!-- TESTIMONI -->
+<section class="testimoni">
+<h2>Testimoni Pelanggan</h2>
+
+<div class="testi-container">
+
+<div class="testi-card">
+<img src="images/testi1.jpg">
+<p>Alhamdulillah domba sehat</p>
+</div>
+
+<div class="testi-card">
+<img src="images/testi2.jpg">
+<p>Pelayanan cepat & amanah</p>
+</div>
+
+<div class="testi-card">
+<img src="images/testi3.jpg">
+<p>Kualitas sangat bagus</p>
+</div>
+
+<div class="testi-card">
+<img src="images/testi4.jpg">
+<p>Recommended 👍</p>
+</div>
+
+</div>
+</section>
+
+<!-- FLOAT WA -->
+<a href="https://wa.me/6285175085344?text=Halo%20saya%20tertarik%20dengan%20domba%20Agro%20Nusa%20Farm"
    class="wa-float" target="_blank">
-    <img src="images/wa.jpg">
+   <img src="images/wa.jpg">
 </a>
 
 </body>
