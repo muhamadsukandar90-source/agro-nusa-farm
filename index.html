@@ -30,7 +30,7 @@ body {
   padding: 60px;
 }
 .hero img {
-  width: 400px;
+  width: 420px;
   border-radius: 20px;
   margin-left: 40px;
 }
@@ -44,6 +44,12 @@ body {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+}
+.btn-order {
+  background: #25D366;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
 }
 
 /* Section */
@@ -59,12 +65,14 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card {
   background: white;
   padding: 15px;
   border-radius: 15px;
-  width: 250px;
+  width: 260px;
   transition: 0.3s;
+  position: relative;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -74,7 +82,37 @@ body {
   border-radius: 10px;
 }
 
-/* WA */
+/* Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* Harga */
+.price {
+  font-weight: bold;
+  color: #2c7a7b;
+  margin: 5px 0;
+}
+
+/* Keunggulan */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.feature {
+  width: 200px;
+}
+
+/* WA floating */
 .wa {
   position: fixed;
   bottom: 20px;
@@ -109,38 +147,57 @@ body {
     <p>Domba sehat, sesuai syariat, langsung dari peternak terpercaya.</p>
     <a href="https://wa.me/6285175085344" class="btn">Pesan Sekarang</a>
   </div>
-
   <img src="images/domba1.jpg">
+</section>
+
+<!-- Keunggulan -->
+<section class="section">
+  <h2>Kenapa Pilih Kami?</h2>
+  <div class="features">
+    <div class="feature">✔ Sehat & Terawat</div>
+    <div class="feature">✔ Sesuai Syariat</div>
+    <div class="feature">✔ Pengiriman Aman</div>
+    <div class="feature">✔ Harga Terjangkau</div>
+  </div>
 </section>
 
 <!-- Produk -->
 <section class="section">
-  <h2>Produk Domba Kami</h2>
+  <h2>Katalog Domba</h2>
 
   <div class="cards">
 
     <div class="card">
+      <div class="badge">Best Seller</div>
       <img src="images/domba1.jpg">
-      <h3>Domba Qurban</h3>
-      <p>Siap kirim & sesuai syariat</p>
+      <h3>Domba Qurban A</h3>
+      <p class="price">Rp 2.500.000</p>
+      <p>Bobot ± 25-30kg</p>
+      <a href="https://wa.me/6285175085344?text=Saya%20ingin%20pesan%20Domba%20Qurban%20A" class="btn btn-order">Pesan Sekarang</a>
     </div>
 
     <div class="card">
       <img src="images/domba2.jpg">
-      <h3>Domba Aqiqah</h3>
-      <p>Sehat & terawat</p>
+      <h3>Domba Qurban B</h3>
+      <p class="price">Rp 3.000.000</p>
+      <p>Bobot ± 30-35kg</p>
+      <a href="https://wa.me/6285175085344?text=Saya%20ingin%20pesan%20Domba%20Qurban%20B" class="btn btn-order">Pesan Sekarang</a>
     </div>
 
     <div class="card">
       <img src="images/domba3.jpg">
       <h3>Domba Premium</h3>
-      <p>Ukuran besar & kualitas terbaik</p>
+      <p class="price">Rp 3.500.000</p>
+      <p>Bobot ± 35-40kg</p>
+      <a href="https://wa.me/6285175085344?text=Saya%20ingin%20pesan%20Domba%20Premium" class="btn btn-order">Pesan Sekarang</a>
     </div>
 
     <div class="card">
       <img src="images/domba4.jpg">
       <h3>Domba Super</h3>
-      <p>Kualitas unggulan & siap kirim</p>
+      <p class="price">Rp 4.000.000</p>
+      <p>Bobot ± 40kg+</p>
+      <a href="https://wa.me/6285175085344?text=Saya%20ingin%20pesan%20Domba%20Super" class="btn btn-order">Pesan Sekarang</a>
     </div>
 
   </div>
@@ -151,31 +208,16 @@ body {
   <h2>Testimoni Pelanggan</h2>
 
   <div class="cards">
-    <div class="card">
-      <img src="images/testi1.jpg">
-      <p>Pelanggan puas dengan kualitas domba</p>
-    </div>
-
-    <div class="card">
-      <img src="images/testi2.jpg">
-      <p>Pengiriman aman & cepat</p>
-    </div>
-
-    <div class="card">
-      <img src="images/testi3.jpg">
-      <p>Domba sesuai pesanan</p>
-    </div>
-
-    <div class="card">
-      <img src="images/testi4.jpg">
-      <p>Pelayanan ramah & amanah</p>
-    </div>
+    <div class="card"><img src="images/testi1.jpg"></div>
+    <div class="card"><img src="images/testi2.jpg"></div>
+    <div class="card"><img src="images/testi3.jpg"></div>
+    <div class="card"><img src="images/testi4.jpg"></div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="section" style="background:#2c7a7b; color:white;">
-  <h2>Siap Qurban Sekarang?</h2>
+  <h2>Stok Terbatas! Segera Pesan Sekarang</h2>
   <a href="https://wa.me/6285175085344" class="btn">Chat WhatsApp</a>
 </section>
 
