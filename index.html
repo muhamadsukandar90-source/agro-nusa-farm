@@ -34,19 +34,25 @@ body {
   border-radius: 20px;
   margin-left: 40px;
 }
+
+/* Button */
 .btn {
   background: #2c7a7b;
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-/* Produk */
+/* Section */
 .section {
   padding: 60px;
   text-align: center;
 }
+
+/* Cards */
 .cards {
   display: flex;
   gap: 20px;
@@ -58,19 +64,17 @@ body {
   padding: 15px;
   border-radius: 15px;
   width: 250px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 .card img {
   width: 100%;
   border-radius: 10px;
 }
 
-/* Testimoni */
-.testimoni img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-/* WA floating */
+/* WA */
 .wa {
   position: fixed;
   bottom: 20px;
@@ -114,6 +118,7 @@ body {
   <h2>Produk Domba Kami</h2>
 
   <div class="cards">
+
     <div class="card">
       <img src="images/domba1.jpg">
       <h3>Domba Qurban</h3>
@@ -131,6 +136,13 @@ body {
       <h3>Domba Premium</h3>
       <p>Ukuran besar & kualitas terbaik</p>
     </div>
+
+    <div class="card">
+      <img src="images/domba4.jpg">
+      <h3>Domba Super</h3>
+      <p>Kualitas unggulan & siap kirim</p>
+    </div>
+
   </div>
 </section>
 
@@ -138,7 +150,7 @@ body {
 <section class="section">
   <h2>Testimoni Pelanggan</h2>
 
-  <div class="cards testimoni">
+  <div class="cards">
     <div class="card">
       <img src="images/testi1.jpg">
       <p>Pelanggan puas dengan kualitas domba</p>
