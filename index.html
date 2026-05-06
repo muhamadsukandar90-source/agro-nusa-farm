@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agro Nusa Farm - Domba Qurban & Aqiqah</title>
+<title>Agro Nusa Farm</title>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYNVSE8456"></script>
@@ -15,220 +15,178 @@ gtag('config', 'G-SYNVSE8456');
 </script>
 
 <style>
-body {
-  margin:0;
-  font-family:'Segoe UI',sans-serif;
-  background:#f4f7f6;
-}
+body{margin:0;font-family:sans-serif;background:#f5f5f5}
 
 /* HEADER */
-header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 30px;
-  background:white;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+header{
+display:flex;align-items:center;justify-content:space-between;
+padding:15px 30px;background:white;
 }
-header h2 {color:#2c7a7b;}
+.logo{display:flex;align-items:center;}
+.logo img{width:45px;margin-right:10px;border-radius:50%}
 
 /* HERO */
-.hero {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:60px 30px;
-  background:linear-gradient(135deg,#2c7a7b,#38a169);
-  color:white;
-  flex-wrap:wrap;
+.hero{
+padding:60px 30px;
+background:linear-gradient(135deg,#2c7a7b,#38a169);
+color:white;
 }
-.hero-text {max-width:500px;}
-.hero h1 {font-size:36px;margin-bottom:10px;}
-
-.btn {
-  background:#25D366;
-  padding:12px 20px;
-  border-radius:25px;
-  color:white;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:10px;
-  font-weight:bold;
+.btn{
+background:#25D366;color:white;padding:12px 20px;
+border-radius:25px;text-decoration:none;display:inline-block;margin-top:10px;
 }
 
 /* SECTION */
-.section {
-  padding:50px 20px;
-  text-align:center;
-}
+.section{text-align:center;padding:50px 20px}
 
 /* GRID */
-.cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-  max-width:1200px;
-  margin:auto;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1100px;margin:auto;
 }
 
 /* CARD */
-.card {
-  background:white;
-  padding:15px;
-  border-radius:20px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.08);
-  transition:0.3s;
+.card{
+background:white;padding:15px;border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
-.card:hover {
-  transform:translateY(-5px);
+.card img{
+width:100%;height:200px;object-fit:cover;border-radius:10px;
 }
-
-.card img {
-  width:100%;
-  height:200px;
-  object-fit:cover;
-  border-radius:15px;
-}
-
-.price {
-  color:#2f855a;
-  font-weight:bold;
-  font-size:18px;
-}
-
-/* BADGE */
-.badge {
-  background:orange;
-  color:white;
-  padding:5px 10px;
-  border-radius:10px;
-  font-size:12px;
-  display:inline-block;
-  margin-bottom:5px;
-}
+.price{color:green;font-weight:bold}
 
 /* TESTIMONI */
-.testi {
-  background:white;
-}
-.testi-card {
-  background:#f9f9f9;
-  padding:10px;
-  border-radius:15px;
-}
-
-/* FOOTER */
-footer {
-  background:#222;
-  color:white;
-  padding:20px;
+.testi img{
+width:100%;height:150px;object-fit:cover;border-radius:10px;
 }
 
 /* FLOAT WA */
-.wa-float {
-  position:fixed;
-  bottom:20px;
-  right:20px;
+.wa{
+position:fixed;bottom:20px;right:20px;
 }
-.wa-float img {width:60px;}
+.wa img{width:55px}
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-<h2>Agro Nusa Farm</h2>
-<a href="https://wa.me/6285175085344" class="btn">Hubungi Kami</a>
+<div class="logo">
+<img src="images/logo.jpg" onerror="this.src='https://via.placeholder.com/50'">
+<h3>Agro Nusa Farm</h3>
+</div>
+<a href="https://wa.me/6285175085344" class="btn">Hubungi</a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-<div class="hero-text">
 <h1>Domba Qurban Berkualitas & Amanah</h1>
-<p>Langsung dari peternak terpercaya. Sehat, sesuai syariat, siap kirim.</p>
+<p>Sehat, sesuai syariat, siap kirim.</p>
 <a href="https://wa.me/6285175085344" class="btn">Pesan Sekarang</a>
-</div>
-</section>
-
-<!-- KEUNGGULAN -->
-<section class="section">
-<h2>Kenapa Pilih Kami?</h2>
-<p>✔ Domba sehat & terawat<br>
-✔ Harga transparan<br>
-✔ Amanah & terpercaya<br>
-✔ Bisa kirim lokasi</p>
 </section>
 
 <!-- KATALOG -->
 <section class="section">
 <h2>Katalog Domba</h2>
 
-<div class="cards">
+<div class="grid">
 
+<!-- A -->
 <div class="card">
-<span class="badge">Best Seller</span>
-<img src="images/domba-a.jpg">
+<img src="images/domba-a.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
 <h3>Domba A</h3>
 <p class="price">Rp 2.500.000</p>
-<p>Bobot 25–26 kg</p>
-<a href="https://wa.me/6285175085344?text=Domba A" class="btn">Pesan</a>
+<p>25–26 kg</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
 </div>
 
+<!-- B -->
 <div class="card">
-<img src="images/domba-b.jpg">
+<img src="images/domba-b.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
 <h3>Domba B</h3>
 <p class="price">Rp 3.000.000</p>
-<p>Bobot 30–31 kg</p>
-<a href="#" class="btn">Pesan</a>
+<p>30–31 kg</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
 </div>
 
+<!-- C -->
 <div class="card">
-<img src="images/domba-c.jpg">
+<img src="images/domba-c.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
 <h3>Domba C</h3>
 <p class="price">Rp 3.500.000</p>
-<p>Bobot 35–36 kg</p>
-<a href="#" class="btn">Pesan</a>
+<p>35–36 kg</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
 </div>
 
+<!-- D -->
 <div class="card">
-<span class="badge">Premium</span>
-<img src="images/domba-premium.jpg">
+<img src="images/domba-d.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<h3>Domba D</h3>
+<p class="price">Rp 4.000.000</p>
+<p>40–41 kg</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+</div>
+
+<!-- E -->
+<div class="card">
+<img src="images/domba-e.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<h3>Domba E</h3>
+<p class="price">Rp 4.500.000</p>
+<p>45–46 kg</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+</div>
+
+<!-- SUPER -->
+<div class="card">
+<img src="images/domba-super.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<h3>Domba Super</h3>
+<p class="price">Rp 5.000.000</p>
+<p>50 kg+</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+</div>
+
+<!-- PREMIUM -->
+<div class="card">
+<img src="images/domba-premium.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
 <h3>Domba Premium</h3>
 <p class="price">Rp 5.500.000</p>
-<p>Bobot 55 kg+</p>
-<a href="#" class="btn">Pesan</a>
+<p>55 kg+</p>
+<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
 </div>
 
 </div>
 </section>
 
 <!-- TESTIMONI -->
-<section class="section testi">
+<section class="section">
 <h2>Testimoni</h2>
 
-<div class="cards">
+<div class="grid testi">
 
-<div class="testi-card">
-<p>"Domba sehat, pelayanan cepat!"</p>
+<div class="card">
+<img src="images/testi1.jpg" onerror="this.src='https://via.placeholder.com/300x150'">
+<p>"Domba sehat & pelayanan cepat"</p>
 </div>
 
-<div class="testi-card">
+<div class="card">
+<img src="images/testi2.jpg" onerror="this.src='https://via.placeholder.com/300x150'">
 <p>"Amanah & recommended 👍"</p>
 </div>
 
-<div class="testi-card">
+<div class="card">
+<img src="images/testi3.jpg" onerror="this.src='https://via.placeholder.com/300x150'">
 <p>"Sudah langganan tiap tahun"</p>
 </div>
 
 </div>
 </section>
 
-<footer>
-<p>© 2026 Agro Nusa Farm</p>
-</footer>
-
-<a href="https://wa.me/6285175085344" class="wa-float">
-<img src="images/wa.jpg">
+<!-- FLOAT WA -->
+<a href="https://wa.me/6285175085344" class="wa">
+<img src="images/wa.jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/733/733585.png'">
 </a>
 
 </body>
