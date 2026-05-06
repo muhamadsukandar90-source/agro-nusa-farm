@@ -15,13 +15,8 @@ gtag('config', 'G-SYNVSE8456');
 </script>
 
 <style>
-body {
-    margin:0;
-    font-family:Arial;
-    background:#f5f5f5;
-}
+body {margin:0;font-family:Arial;background:#f5f5f5;}
 
-/* HEADER */
 header {
     display:flex;
     justify-content:space-between;
@@ -30,17 +25,8 @@ header {
     background:white;
 }
 
-.logo {
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo img {
-    width:45px;
-    height:45px;
-    border-radius:50%;
-}
+.logo {display:flex;align-items:center;gap:10px;}
+.logo img {width:45px;height:45px;border-radius:50%;}
 
 .btn-header {
     background:#2ecc71;
@@ -50,15 +36,10 @@ header {
     text-decoration:none;
 }
 
-/* HERO */
 .hero {
     background:linear-gradient(90deg,#2c7a7b,#38a169);
     color:white;
-    padding:70px 40px;
-}
-
-.hero h1 {
-    font-size:36px;
+    padding:80px 30px;
 }
 
 .btn {
@@ -69,13 +50,8 @@ header {
     text-decoration:none;
 }
 
-/* SECTION */
-.section {
-    padding:50px 20px;
-    text-align:center;
-}
+.section {padding:50px 20px;text-align:center;}
 
-/* GRID */
 .grid {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -84,7 +60,6 @@ header {
     margin:auto;
 }
 
-/* CARD */
 .card {
     background:white;
     padding:15px;
@@ -99,25 +74,24 @@ header {
     border-radius:10px;
 }
 
-.price {
-    color:green;
-    font-weight:bold;
-}
+.price {color:green;font-weight:bold;}
 
-/* TESTIMONI */
 .testimoni img {
     width:100%;
-    height:160px;        /* INI YANG FIX MASALAH */
-    object-fit:cover;    /* supaya tidak gepeng */
+    height:160px;
+    object-fit:cover;
     border-radius:10px;
 }
 
-.testimoni p {
-    font-size:14px;
-    margin-top:8px;
+footer {
+    text-align:center;
+    padding:25px;
+    background:#1a202c;
+    color:#ccc;
 }
 
-/* FLOAT WA */
+footer h3 {color:white;}
+
 .wa {
     position:fixed;
     bottom:20px;
@@ -143,10 +117,8 @@ header {
     <a href="https://wa.me/6285175085344" class="btn">Pesan Sekarang</a>
 </section>
 
-<!-- KATALOG -->
 <section class="section">
 <h2>Katalog Domba</h2>
-
 <div class="grid">
 
 <div class="card">
@@ -154,7 +126,6 @@ header {
 <h3>Domba A</h3>
 <p class="price">Rp 2.500.000</p>
 <p>25–26 kg</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 <div class="card">
@@ -162,7 +133,6 @@ header {
 <h3>Domba B</h3>
 <p class="price">Rp 3.000.000</p>
 <p>30–31 kg</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 <div class="card">
@@ -170,7 +140,6 @@ header {
 <h3>Domba C</h3>
 <p class="price">Rp 3.500.000</p>
 <p>35–36 kg</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 <div class="card">
@@ -178,7 +147,6 @@ header {
 <h3>Domba D</h3>
 <p class="price">Rp 4.000.000</p>
 <p>40–41 kg</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 <div class="card">
@@ -186,7 +154,6 @@ header {
 <h3>Domba E</h3>
 <p class="price">Rp 4.500.000</p>
 <p>45–46 kg</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 <div class="card">
@@ -194,7 +161,6 @@ header {
 <h3>Super</h3>
 <p class="price">Rp 5.000.000</p>
 <p>50 kg+</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 <div class="card">
@@ -202,16 +168,13 @@ header {
 <h3>Premium</h3>
 <p class="price">Rp 5.500.000</p>
 <p>55 kg+</p>
-<a href="#" class="btn">Pesan</a>
 </div>
 
 </div>
 </section>
 
-<!-- TESTIMONI -->
 <section class="section">
 <h2>Testimoni</h2>
-
 <div class="grid testimoni">
 
 <div class="card">
@@ -237,7 +200,17 @@ header {
 </div>
 </section>
 
-<!-- WA FLOAT -->
+<footer>
+<h3>Agro Nusa Farm</h3>
+<p>Peternakan Domba Qurban & Aqiqah Amanah</p>
+<p>📞 085175085344 | 📧 agronusafarm2@gmail.com</p>
+<p>© <span id="year"></span> Agro Nusa Farm. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
 <a href="https://wa.me/6285175085344">
 <img src="images/wa.jpg" class="wa">
 </a>
