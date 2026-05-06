@@ -41,19 +41,11 @@ header {
     margin-right: 10px;
 }
 
-.btn-top {
-    background: #25D366;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
 /* HERO */
 .hero {
     background: linear-gradient(135deg,#2c7a7b,#38a169);
     color: white;
-    padding: 80px 40px;
+    padding: 80px 30px;
 }
 
 /* KATALOG */
@@ -63,16 +55,14 @@ header {
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
     gap: 20px;
-    justify-content: center;
 }
 
 /* CARD */
 .card {
     background: white;
-    width: 250px;
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -83,14 +73,6 @@ header {
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-/* fallback kalau gambar error */
-.card img:before {
-    content: "Gambar tidak ditemukan";
-    display: block;
-    text-align: center;
-    color: red;
 }
 
 .price {
@@ -116,14 +98,9 @@ header {
 }
 
 .testi-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.testi-card {
-    width: 200px;
 }
 
 .testi-card img {
@@ -151,13 +128,11 @@ header {
         <img src="/images/logo.jpg" onerror="this.src='https://via.placeholder.com/50'">
         <h3>Agro Nusa Farm</h3>
     </div>
-
-    <a href="https://wa.me/6285175085344" class="btn-top">Hubungi</a>
 </header>
 
 <section class="hero">
     <h1>Domba Qurban Berkualitas & Amanah</h1>
-    <p>Sehat, sesuai syariat, siap kirim.</p>
+    <p>Sehat, sesuai syariat, siap kirim</p>
 </section>
 
 <!-- KATALOG -->
@@ -166,36 +141,67 @@ header {
 
 <div class="cards">
 
+<!-- A -->
 <div class="card">
 <img src="/images/domba1.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba A</h3>
 <p class="price">Rp 2.500.000</p>
 <p>25–26 kg</p>
-<a href="#" class="btn">Pesan</a>
+<a href="https://wa.me/6285175085344?text=Domba A" class="btn">Pesan</a>
 </div>
 
+<!-- B -->
 <div class="card">
 <img src="/images/domba2.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba B</h3>
 <p class="price">Rp 3.000.000</p>
 <p>30–31 kg</p>
-<a href="#" class="btn">Pesan</a>
+<a href="https://wa.me/6285175085344?text=Domba B" class="btn">Pesan</a>
 </div>
 
+<!-- C -->
 <div class="card">
 <img src="/images/domba3.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba C</h3>
 <p class="price">Rp 3.500.000</p>
 <p>35–36 kg</p>
-<a href="#" class="btn">Pesan</a>
+<a href="https://wa.me/6285175085344?text=Domba C" class="btn">Pesan</a>
 </div>
 
+<!-- D -->
 <div class="card">
 <img src="/images/domba4.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba D</h3>
 <p class="price">Rp 4.000.000</p>
 <p>40–41 kg</p>
-<a href="#" class="btn">Pesan</a>
+<a href="https://wa.me/6285175085344?text=Domba D" class="btn">Pesan</a>
+</div>
+
+<!-- E -->
+<div class="card">
+<img src="/images/domba5.jpg" onerror="this.src='https://via.placeholder.com/250'">
+<h3>Domba E</h3>
+<p class="price">Rp 4.500.000</p>
+<p>45–46 kg</p>
+<a href="https://wa.me/6285175085344?text=Domba E" class="btn">Pesan</a>
+</div>
+
+<!-- SUPER -->
+<div class="card">
+<img src="/images/domba6.jpg" onerror="this.src='https://via.placeholder.com/250'">
+<h3>Domba Super 🔥</h3>
+<p class="price">Rp 5.000.000</p>
+<p>50 kg up</p>
+<a href="https://wa.me/6285175085344?text=Domba Super" class="btn">Pesan</a>
+</div>
+
+<!-- PREMIUM -->
+<div class="card">
+<img src="/images/domba7.jpg" onerror="this.src='https://via.placeholder.com/250'">
+<h3>Domba Premium ⭐</h3>
+<p class="price">Rp 5.500.000</p>
+<p>55 kg up</p>
+<a href="https://wa.me/6285175085344?text=Domba Premium" class="btn">Pesan</a>
 </div>
 
 </div>
@@ -207,17 +213,17 @@ header {
 
 <div class="testi-container">
 
-<div class="testi-card">
+<div>
 <img src="/images/testi1.jpg" onerror="this.src='https://via.placeholder.com/200'">
-<p>"Domba sehat!"</p>
+<p>"Domba sehat dan bagus"</p>
 </div>
 
-<div class="testi-card">
+<div>
 <img src="/images/testi2.jpg" onerror="this.src='https://via.placeholder.com/200'">
-<p>"Amanah 👍"</p>
+<p>"Pelayanan cepat 👍"</p>
 </div>
 
-<div class="testi-card">
+<div>
 <img src="/images/testi3.jpg" onerror="this.src='https://via.placeholder.com/200'">
 <p>"Langganan tiap tahun"</p>
 </div>
