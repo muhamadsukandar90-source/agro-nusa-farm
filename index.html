@@ -15,52 +15,11 @@ gtag('config', 'G-SYNVSE8456');
 </script>
 
 <style>
-body {
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f5f5f5;
-}
+body {margin:0;font-family:Arial;background:#f5f5f5;}
+header {background:white;padding:15px;text-align:center;font-weight:bold;}
 
-/* HEADER */
-header {
-  background:white;
-  padding:15px 30px;
-  display:flex;
-  align-items:center;
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}
-header img {width:50px;margin-right:10px;}
-header h2 {margin:0;color:#2c7a7b;}
+.section {padding:40px;text-align:center;}
 
-/* HERO */
-.hero {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:50px;
-  flex-wrap:wrap;
-}
-.hero-text {max-width:500px;}
-.hero h1 {font-size:32px;}
-.hero img {width:350px;border-radius:20px;}
-
-.btn {
-  background:#2c7a7b;
-  color:white;
-  padding:12px 20px;
-  border-radius:20px;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:10px;
-}
-
-/* SECTION */
-.section {
-  padding:50px 20px;
-  text-align:center;
-}
-
-/* GRID */
 .cards {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -69,21 +28,20 @@ header h2 {margin:0;color:#2c7a7b;}
   margin:auto;
 }
 
-/* CARD */
 .card {
   background:white;
   padding:15px;
   border-radius:15px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+
 .card img {
   width:100%;
+  height:200px;
+  object-fit:cover;
   border-radius:10px;
 }
-.price {
-  color:green;
-  font-weight:bold;
-}
+
+.price {color:green;font-weight:bold;}
 
 .btn-wa {
   display:block;
@@ -94,161 +52,83 @@ header h2 {margin:0;color:#2c7a7b;}
   border-radius:10px;
   text-decoration:none;
 }
-
-/* TESTIMONI */
-.testi-card {
-  background:white;
-  padding:10px;
-  border-radius:10px;
-}
-.testi-card img {
-  width:100%;
-  border-radius:10px;
-}
-
-/* FOOTER */
-footer {
-  background:#222;
-  color:white;
-  text-align:center;
-  padding:15px;
-}
-
-/* FLOAT WA */
-.wa-float {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-}
-.wa-float img {width:55px;}
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<img src="images/logo.jpg">
-<h2>Agro Nusa Farm</h2>
-</header>
+<header>Agro Nusa Farm</header>
 
-<!-- HERO -->
-<section class="hero">
-<div class="hero-text">
-<h1>Domba Qurban & Aqiqah Sesuai Syariat</h1>
-<p>Kualitas terbaik langsung dari peternak terpercaya.</p>
-
-<a href="https://wa.me/6285175085344" class="btn">
-Pesan Sekarang
-</a>
-</div>
-
-<img src="images/domba1.jpg">
-</section>
-
-<!-- KATALOG -->
 <section class="section">
 <h2>Katalog Domba</h2>
 
 <div class="cards">
 
+<!-- A -->
 <div class="card">
-<img src="images/domba1.jpg">
+<img src="images/domba-a.jpg">
 <h3>Domba A</h3>
 <p class="price">Rp 2.500.000</p>
 <p>Bobot 25–26 kg</p>
-<a href="https://wa.me/6285175085344?text=Domba A" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba A" class="btn-wa">Pesan WA</a>
 </div>
 
+<!-- B -->
 <div class="card">
-<img src="images/domba2.jpg">
+<img src="images/domba-b.jpg">
 <h3>Domba B</h3>
 <p class="price">Rp 3.000.000</p>
 <p>Bobot 30–31 kg</p>
-<a href="https://wa.me/6285175085344?text=Domba B" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba B" class="btn-wa">Pesan WA</a>
 </div>
 
+<!-- C -->
 <div class="card">
-<img src="images/domba3.jpg">
+<img src="images/domba-c.jpg">
 <h3>Domba C</h3>
 <p class="price">Rp 3.500.000</p>
 <p>Bobot 35–36 kg</p>
-<a href="https://wa.me/6285175085344?text=Domba C" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba C" class="btn-wa">Pesan WA</a>
 </div>
 
+<!-- D -->
 <div class="card">
-<img src="images/domba4.jpg">
+<img src="images/domba-d.jpg">
 <h3>Domba D</h3>
 <p class="price">Rp 4.000.000</p>
 <p>Bobot 40–41 kg</p>
-<a href="https://wa.me/6285175085344?text=Domba D" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba D" class="btn-wa">Pesan WA</a>
 </div>
 
+<!-- E -->
 <div class="card">
-<img src="images/domba5.jpg">
+<img src="images/domba-e.jpg">
 <h3>Domba E</h3>
 <p class="price">Rp 4.500.000</p>
 <p>Bobot 45–46 kg</p>
-<a href="https://wa.me/6285175085344?text=Domba E" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba E" class="btn-wa">Pesan WA</a>
 </div>
 
+<!-- SUPER -->
 <div class="card">
-<img src="images/domba6.jpg">
+<img src="images/domba-super.jpg">
 <h3>Domba Super</h3>
 <p class="price">Rp 5.000.000</p>
 <p>Bobot 50 kg up</p>
-<a href="https://wa.me/6285175085344?text=Domba Super" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba Super" class="btn-wa">Pesan WA</a>
 </div>
 
+<!-- PREMIUM -->
 <div class="card">
-<img src="images/domba6.jpg">
+<img src="images/domba-premium.jpg">
 <h3>Domba Premium</h3>
 <p class="price">Rp 5.500.000</p>
 <p>Bobot 55 kg up</p>
-<a href="https://wa.me/6285175085344?text=Domba Premium" class="btn-wa">Pesan WA</a>
+<a href="https://wa.me/6285175085344?text=Pesan Domba Premium" class="btn-wa">Pesan WA</a>
 </div>
 
 </div>
 </section>
-
-<!-- TESTIMONI -->
-<section class="section" style="background:white;">
-<h2>Testimoni Pelanggan</h2>
-
-<div class="cards">
-
-<div class="testi-card">
-<img src="images/testi1.jpg">
-<p>Alhamdulillah domba sehat</p>
-</div>
-
-<div class="testi-card">
-<img src="images/testi2.jpg">
-<p>Pelayanan cepat & amanah</p>
-</div>
-
-<div class="testi-card">
-<img src="images/testi3.jpg">
-<p>Kualitas sangat bagus</p>
-</div>
-
-<div class="testi-card">
-<img src="images/testi4.jpg">
-<p>Recommended 👍</p>
-</div>
-
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Agro Nusa Farm</p>
-</footer>
-
-<!-- FLOAT WA -->
-<a href="https://wa.me/6285175085344" class="wa-float">
-<img src="images/wa.jpg">
-</a>
 
 </body>
 </html>
