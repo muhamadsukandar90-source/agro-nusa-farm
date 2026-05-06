@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Agro Nusa Farm</title>
 
-<!-- Google Analytics -->
+<!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYNVSE8456"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -15,170 +16,210 @@ gtag('config', 'G-SYNVSE8456');
 </script>
 
 <style>
-body{margin:0;font-family:sans-serif;background:#f5f5f5}
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
 
 /* HEADER */
-header{
-display:flex;align-items:center;justify-content:space-between;
-padding:15px 30px;background:white;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
 }
-.logo{display:flex;align-items:center;}
-.logo img{width:45px;margin-right:10px;border-radius:50%}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.btn-top {
+    background: #25D366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
 
 /* HERO */
-.hero{
-padding:60px 30px;
-background:linear-gradient(135deg,#2c7a7b,#38a169);
-color:white;
-}
-.btn{
-background:#25D366;color:white;padding:12px 20px;
-border-radius:25px;text-decoration:none;display:inline-block;margin-top:10px;
+.hero {
+    background: linear-gradient(135deg,#2c7a7b,#38a169);
+    color: white;
+    padding: 80px 40px;
 }
 
-/* SECTION */
-.section{text-align:center;padding:50px 20px}
+/* KATALOG */
+.katalog {
+    padding: 50px;
+    text-align: center;
+}
 
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-max-width:1100px;margin:auto;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 /* CARD */
-.card{
-background:white;padding:15px;border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-.card img{
-width:100%;height:200px;object-fit:cover;border-radius:10px;
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-.price{color:green;font-weight:bold}
+
+/* fallback kalau gambar error */
+.card img:before {
+    content: "Gambar tidak ditemukan";
+    display: block;
+    text-align: center;
+    color: red;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.btn {
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
 
 /* TESTIMONI */
-.testi img{
-width:100%;height:150px;object-fit:cover;border-radius:10px;
+.testimoni {
+    padding: 50px;
+    background: white;
+    text-align: center;
+}
+
+.testi-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testi-card {
+    width: 200px;
+}
+
+.testi-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* FLOAT WA */
-.wa{
-position:fixed;bottom:20px;right:20px;
+.wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
-.wa img{width:55px}
+
+.wa img {
+    width: 55px;
+}
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-<div class="logo">
-<img src="images/logo.jpg" onerror="this.src='https://via.placeholder.com/50'">
-<h3>Agro Nusa Farm</h3>
-</div>
-<a href="https://wa.me/6285175085344" class="btn">Hubungi</a>
+    <div class="logo">
+        <img src="/images/logo.jpg" onerror="this.src='https://via.placeholder.com/50'">
+        <h3>Agro Nusa Farm</h3>
+    </div>
+
+    <a href="https://wa.me/6285175085344" class="btn-top">Hubungi</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-<h1>Domba Qurban Berkualitas & Amanah</h1>
-<p>Sehat, sesuai syariat, siap kirim.</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan Sekarang</a>
+    <h1>Domba Qurban Berkualitas & Amanah</h1>
+    <p>Sehat, sesuai syariat, siap kirim.</p>
 </section>
 
 <!-- KATALOG -->
-<section class="section">
+<section class="katalog">
 <h2>Katalog Domba</h2>
 
-<div class="grid">
+<div class="cards">
 
-<!-- A -->
 <div class="card">
-<img src="images/domba-a.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<img src="/images/domba1.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba A</h3>
 <p class="price">Rp 2.500.000</p>
 <p>25–26 kg</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+<a href="#" class="btn">Pesan</a>
 </div>
 
-<!-- B -->
 <div class="card">
-<img src="images/domba-b.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<img src="/images/domba2.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba B</h3>
 <p class="price">Rp 3.000.000</p>
 <p>30–31 kg</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+<a href="#" class="btn">Pesan</a>
 </div>
 
-<!-- C -->
 <div class="card">
-<img src="images/domba-c.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<img src="/images/domba3.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba C</h3>
 <p class="price">Rp 3.500.000</p>
 <p>35–36 kg</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+<a href="#" class="btn">Pesan</a>
 </div>
 
-<!-- D -->
 <div class="card">
-<img src="images/domba-d.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
+<img src="/images/domba4.jpg" onerror="this.src='https://via.placeholder.com/250'">
 <h3>Domba D</h3>
 <p class="price">Rp 4.000.000</p>
 <p>40–41 kg</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
-</div>
-
-<!-- E -->
-<div class="card">
-<img src="images/domba-e.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
-<h3>Domba E</h3>
-<p class="price">Rp 4.500.000</p>
-<p>45–46 kg</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
-</div>
-
-<!-- SUPER -->
-<div class="card">
-<img src="images/domba-super.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
-<h3>Domba Super</h3>
-<p class="price">Rp 5.000.000</p>
-<p>50 kg+</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
-</div>
-
-<!-- PREMIUM -->
-<div class="card">
-<img src="images/domba-premium.jpg" onerror="this.src='https://via.placeholder.com/300x200'">
-<h3>Domba Premium</h3>
-<p class="price">Rp 5.500.000</p>
-<p>55 kg+</p>
-<a href="https://wa.me/6285175085344" class="btn">Pesan</a>
+<a href="#" class="btn">Pesan</a>
 </div>
 
 </div>
 </section>
 
 <!-- TESTIMONI -->
-<section class="section">
+<section class="testimoni">
 <h2>Testimoni</h2>
 
-<div class="grid testi">
+<div class="testi-container">
 
-<div class="card">
-<img src="images/testi1.jpg" onerror="this.src='https://via.placeholder.com/300x150'">
-<p>"Domba sehat & pelayanan cepat"</p>
+<div class="testi-card">
+<img src="/images/testi1.jpg" onerror="this.src='https://via.placeholder.com/200'">
+<p>"Domba sehat!"</p>
 </div>
 
-<div class="card">
-<img src="images/testi2.jpg" onerror="this.src='https://via.placeholder.com/300x150'">
-<p>"Amanah & recommended 👍"</p>
+<div class="testi-card">
+<img src="/images/testi2.jpg" onerror="this.src='https://via.placeholder.com/200'">
+<p>"Amanah 👍"</p>
 </div>
 
-<div class="card">
-<img src="images/testi3.jpg" onerror="this.src='https://via.placeholder.com/300x150'">
-<p>"Sudah langganan tiap tahun"</p>
+<div class="testi-card">
+<img src="/images/testi3.jpg" onerror="this.src='https://via.placeholder.com/200'">
+<p>"Langganan tiap tahun"</p>
 </div>
 
 </div>
@@ -186,7 +227,7 @@ position:fixed;bottom:20px;right:20px;
 
 <!-- FLOAT WA -->
 <a href="https://wa.me/6285175085344" class="wa">
-<img src="images/wa.jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/733/733585.png'">
+<img src="/images/wa.jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/733/733585.png'">
 </a>
 
 </body>
